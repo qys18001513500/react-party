@@ -1,0 +1,42 @@
+.layout {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background:#12183c;
+    >.mask {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background: rgba(0,0,0,.3);
+        z-index: 9;
+    }
+    >.mask.hidden{
+        display: none;
+    }
+    >.iconfont.icon-jiantoushang,
+    >.iconfont.icon-jiantouxia {
+        color: #fff;
+        font-size: 2rem;
+        cursor: pointer;
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+    }
+    >.nav-container {
+        width: 50%;
+        height: 20%;
+        background:#12183c;
+        border: 1px solid #008c8c;
+        position: absolute;
+        bottom: -21%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+        transition: bottom .3s ease-in-out;
+    }
+    >.nav-container.show{
+        bottom: 3%;
+    }
+}
